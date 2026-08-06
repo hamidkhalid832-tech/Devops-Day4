@@ -1,0 +1,11 @@
+Day 12 - Git Basics
+
+Git is a version control system.
+
+Commands learned:
+git init
+git status
+git add
+git commit
+
+Git helps DevOps engineers track and manage code changes.

@@ -1,0 +1,22 @@
+Day 6 - Linux Processes
+
+ps:
+Shows running processes
+
+ps aux:
+Shows all processes with CPU and memory usage
+
+top:
+Real-time system monitoring
+
+PID:
+Unique ID of every process
+
+kill:
+Terminates a process using PID
+
+&
+Runs a process in background
+
+grep:
+Search/filter command output
