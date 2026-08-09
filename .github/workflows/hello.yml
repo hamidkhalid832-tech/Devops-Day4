@@ -13,9 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check repository files
+      - name: CI Failure Practice
         run: |
-          echo "Checking repository..."
-          ls -la
-          echo "CI check completed successfully!"
+          echo "Starting failure test..."
+          exit 1
 
