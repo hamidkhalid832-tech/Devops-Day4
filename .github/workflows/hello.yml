@@ -6,9 +6,16 @@ on:
       - main
 
 jobs:
-  hello:
+  validate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say Hello
-        run: echo "Hello from my first GitHub Actions workflow!"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check repository files
+        run: |
+          echo "Checking repository..."
+          ls -la
+          echo "CI check completed successfully!"
+
