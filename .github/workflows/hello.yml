@@ -1,0 +1,14 @@
+name: DevOps Learning CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello from my first GitHub Actions workflow!"
