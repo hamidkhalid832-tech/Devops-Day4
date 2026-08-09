@@ -13,8 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: CI Failure Practice
-        run: |
-          echo "Starting failure test..."
-          exit 1
+      - name: CI Success Check
+  run: |
+    echo "Starting success test..."
+    exit 0
 
