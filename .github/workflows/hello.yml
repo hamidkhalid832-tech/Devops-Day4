@@ -6,15 +6,13 @@ on:
       - main
 
 jobs:
-  validate:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: CI Success Check
-        run: |
-          echo "Starting success test..."
-          exit 0
+      - name: Run DevOps tests
+        run: ./test.sh
 
