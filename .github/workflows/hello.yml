@@ -30,3 +30,9 @@ jobs:
       - name: Run ShellCheck
         run: shellcheck test.sh
 
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: devops-build
+          path: build/
+
