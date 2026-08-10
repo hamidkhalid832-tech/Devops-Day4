@@ -10,5 +10,3 @@ else
 fi
 
 echo "All tests passed!"
-
-exit 1
