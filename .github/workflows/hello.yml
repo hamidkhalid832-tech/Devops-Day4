@@ -16,6 +16,14 @@ jobs:
       - name: Run DevOps tests
         run: ./test.sh
 
+  quality:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
       - name: Install ShellCheck
         run: sudo apt-get update && sudo apt-get install -y shellcheck
 
