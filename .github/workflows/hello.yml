@@ -16,3 +16,9 @@ jobs:
       - name: Run DevOps tests
         run: ./test.sh
 
+      - name: Install ShellCheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+
+      - name: Run ShellCheck
+        run: shellcheck test.sh
+
