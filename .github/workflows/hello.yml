@@ -9,12 +9,21 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      APP_ENV: production
+      APP_NAME: DevOps-Day4
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
 
       - name: Run DevOps tests
         run: ./test.sh
+
+      - name: Show environment
+        run: |
+          echo "Application: $APP_NAME"
+          echo "Environment: $APP_ENV"
 
   quality:
     needs: test
