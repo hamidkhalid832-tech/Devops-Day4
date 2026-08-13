@@ -11,7 +11,7 @@ jobs:
 
     env:
       APP_ENV: production
-      APP_NAME: DevOps-Day4
+      APP_NAME: "DevOps-Day27"
 
     steps:
       - name: Checkout repository
