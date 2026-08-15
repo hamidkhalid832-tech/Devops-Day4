@@ -11,7 +11,7 @@ jobs:
 
     env:
       APP_ENV: production
-      APP_NAME: "DevOps-Day27"
+      APP_NAME: DevOps-Day4
 
     steps:
       - name: Checkout repository
@@ -24,6 +24,13 @@ jobs:
         run: |
           echo "Application: $APP_NAME"
           echo "Environment: $APP_ENV"
+
+      - name: Use GitHub Secret
+        env:
+          DEMO_SECRET: ${{ secrets.DEMO_SECRET }}
+        run: |
+          echo "Secret is securely available to the workflow"
+          echo "Secret length: ${#DEMO_SECRET}"
 
   quality:
     needs: test
