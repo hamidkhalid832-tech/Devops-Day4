@@ -1,0 +1,5 @@
+services:
+  devops-test:
+    build:
+      context: .
+    container_name: devops-compose-test
